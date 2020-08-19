@@ -1,0 +1,129 @@
+<html>
+    <head>
+    <title> Escola de lisboa</title>
+    <style>
+        body
+        {
+            margin: 0;
+            
+        }
+        #menu ul
+        {
+            margin:0;
+            background-color: #ffcccc;
+            list-style: none;
+        }
+        #menu ul li
+        {
+            display: inline;
+        }
+        #menu ul li a
+        {
+            padding: 20px 100px;
+            display: inline-block;
+
+            color:red;
+            text-decoration: none;
+        }
+
+        #menu ul li a:hover
+        {
+            color:red;
+        }
+    </style>
+    </head>
+
+    <body bgcolor="#ffb3b3">
+       
+        <div id= "menu" >
+            <ul> 
+                <br>
+                <b>
+                <li><a href="Indice.html">Back</a></li>
+                </b>
+            </ul>
+        </div>
+
+    </body>
+    <table style="float:right" cellpading="70" cellspacing="70" >
+                <td>
+                    <br>                
+                    <a href="https://epbjc.pt/lisboa/">
+                    <img src="https://s1.portugalio.com/u/ep/bj/epbjc-escola-profissional-bento-de-jesus-caraca-associacao-1392045675_big.png" height="160">
+                    </a></br>
+                </td>
+    </table>  
+
+    <table cellpadding="9">
+        <td>
+            <h1 style="text-align:left;color:red">Escola EPBJC</h1>
+        </td>
+            
+    </table>    
+
+    <table cellpading="15">
+        <td>
+            <h4 style="text-align:left;color:#b30000"> Login</h4>
+            <br>
+            
+            <form action="Afonso.html" method="post">
+				<label>Primeiro Nome:</label>
+				<input type="text" id="First_name" name="First_name" value="" pattern=".{3,}" required title="3 carateres minimo">
+                <!---pattern=".{3,}" vai informar o browser qualo tipo de campo-->
+				<!----<span class="error">* <?php echo $nameErr;?></span>--->
+				<!----placeholder(faz com que escreva algo no retangulo)-->
+
+           
+
+                <br>
+                <br>
+                    Apelido: <input id="Apelido" type="text" name="Apelido" id="Apelido" pattern=".{3,}" required title="3 carateres minimo">
+                <br>
+            
+            
+				<p> <b>
+				<h8 style="text-align:center;color:firebrick">Escolha o que representa para a escola!?
+				</p></b>
+				<select name "Representa??"> 
+				<option name "--VAZIO--"> 
+				<option value-"Estudantes">Estudantes
+				<option value-"E.E">Encarregado de Educação
+				<option value-"F.da.Escola">Funcionario da Escola
+				<option value-"Professor">Professor ou Professora
+				</select>
+		
+
+		
+				<p> <b>
+				<h8 style="text-align:center;color:firebrick">Em que ano está?!?
+				</p></b>
+				<select name "Ano??"> 
+				<option value-"--VAZIO--">
+				<option value-"10ºAno">10ºAno
+				<option value-"11ºAno">11ºAno
+				<option value-"12ºAno">12ºAno
+				<option value-"Trabalho_na_escola">Trabalho na escola
+				</select>
+		
+				<br>
+				<input type="radio" name="Curso" value="Comunicação, marketing, relações públicas e publicidade" required title="escolher 1">
+				Curso Comunicação, Marketing, Relações Públicas e Publicidade
+				<br>
+				<input type="radio" name="Curso" value="Técnico de design e artes (artes gráficas)" required title="escolher 1">
+				Curso Técnico de Design e Artes (Artes Gráficas)  
+				<br>
+				<input type="radio" name="Curso" value="Técnico de gestão e programação de sistemas informáticos" required title="escolher 1">
+				Curso Técnico de Gestão e Programação de Sistemas Informáticos   
+
+				<br>
+				<h4>Vamos fazer vos um inquérito, clique em "Login" </h4>
+				<br>
+				<button type="submit" value="Submit"> Login </button>
+				<!---"onclick="alert('mensagem')" quando faço login ele manda uma mensagem-->
+            </form>
+        </td>        
+    </table>
+
+    
+    
+</html>
