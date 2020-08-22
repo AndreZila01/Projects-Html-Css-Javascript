@@ -1,0 +1,21 @@
+<svg width="142" height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M71 142C110.212 142 142 110.212 142 71C142 31.7878 110.212 0 71 0C31.7878 0 0 31.7878 0 71C0 110.212 31.7878 142 71 142Z" fill="#EEEEEE"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="142" height="142">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M71 142C110.212 142 142 110.212 142 71C142 31.7878 110.212 0 71 0C31.7878 0 0 31.7878 0 71C0 110.212 31.7878 142 71 142Z" fill="#D8D8D8"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="-20" y="-13" width="176" height="168" fill="#EEEEEE"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="142" height="142">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M71 142C110.212 142 142 110.212 142 71C142 31.7878 110.212 0 71 0C31.7878 0 0 31.7878 0 71C0 110.212 31.7878 142 71 142Z" fill="white"/>
+</mask>
+<g mask="url(#mask1)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38.6338 33.8028C34.2155 33.8028 30.6338 37.3845 30.6338 41.8028V152.563C30.6338 156.412 33.3512 159.626 36.9718 160.391V50.7042H111.972V160.39C115.592 159.625 118.31 156.412 118.31 152.563V41.8028C118.31 37.3845 114.728 33.8028 110.31 33.8028H38.6338Z" fill="#F037A5"/>
+<rect x="67.6057" y="42.2535" width="15.8451" height="2.11268" rx="1" fill="white"/>
+<rect x="45" y="72" width="58" height="41" rx="8" fill="#121212"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M76.6538 98L78 80H71L72.3462 98H76.6538ZM74.4798 100C72.5376 100 71 101.353 71 103.017C71 104.647 72.5376 106 74.4798 106C76.422 106 78 104.647 78 103.017C78 101.353 76.422 100 74.4798 100Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M111 67C117.075 67 122 62.0751 122 56C122 49.9249 117.075 45 111 45C104.925 45 100 49.9249 100 56C100 62.0751 104.925 67 111 67Z" fill="#121212"/>
+<path d="M107.5 52.5L115.345 60.3451" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<path d="M115.5 52.5L107.655 60.3451" stroke="white" stroke-width="2" stroke-linecap="square"/>
+</g>
+</g>
+</svg>
