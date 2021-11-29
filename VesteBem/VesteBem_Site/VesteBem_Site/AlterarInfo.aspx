@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="AlterarInfo.aspx.cs" Inherits="VesteBem_Site.AlterarInfo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+	<style type="text/css">
         .auto-style19 {
             margin-left: 282px;
         }
@@ -54,7 +54,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
+	<p>
         <br />
         <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="Informações pessoais"></asp:Label>
     </p>

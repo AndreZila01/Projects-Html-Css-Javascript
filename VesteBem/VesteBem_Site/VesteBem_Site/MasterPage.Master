@@ -46,8 +46,6 @@
 						<a onclick="document.getElementById('id01').style.display='block'"  class="fa fa-user"></a>
 						<a ></a>
 						 <div id="id01" class="modal">
-  
-  <%--<form class="modal-content animate" action="/action_page.php" method="post">--%>
     <div class="imgcontainer">
       <asp:Image runat="server" ImageUrl="~/Resources/avatar.png" alt="Avatar" class="avatar" Width="150px" />
     </div>
@@ -102,28 +100,28 @@
 			</asp:ContentPlaceHolder>
 		</div>
 		<script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function () {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("navbar").style.top = "0";
-                } else {
-                    document.getElementById("navbar").style.top = "-160px";
-                }
-                prevScrollpos = currentScrollPos;
-            }
-        </script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function () {
+				var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos) {
+					document.getElementById("navbar").style.top = "0";
+				} else {
+					document.getElementById("navbar").style.top = "-160px";
+				}
+				prevScrollpos = currentScrollPos;
+			}
+		</script>
 		<script>
-            // Get the modal
-            var modal = document.getElementById('id01');
+			// Get the modal
+			var modal = document.getElementById('id01');
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
 		<script>
 			function modifyState() {
 				let stateObj = { id: "100" };

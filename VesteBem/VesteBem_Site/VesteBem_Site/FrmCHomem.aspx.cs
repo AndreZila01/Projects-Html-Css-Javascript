@@ -12,7 +12,7 @@ namespace VesteBem
 {
     public partial class FrmCHomem : System.Web.UI.Page
     {
-        SqlConnection liga = new SqlConnection(@"Server=tcp:srv-epbjc.database.windows.net,1433;Initial Catalog=bd;Persist Security Info=False;User ID=epbjc;Password=Teste123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        SqlConnection liga = new SqlConnection(@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=bd;Persist Security Info=False;User ID=epbjc;Password=Teste123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
      
