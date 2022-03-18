@@ -89,25 +89,6 @@
     }
     /* Inputs */
     
-    a {
-        font-family: 'Open Sans Condensed', sans-serif;
-        text-decoration: none;
-        position: relative;
-        width: 80%;
-        display: block;
-        margin: 9px auto;
-        font-size: 17px;
-        color: #fff;
-        padding: 8px;
-        border-radius: 6px;
-        border: none;
-        background: rgba(3, 3, 3, .1);
-        -webkit-transition: all 2s ease-in-out;
-        -moz-transition: all 2s ease-in-out;
-        -o-transition: all 2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-    }
-    
     input {
         font-family: Montserrat-Bold;
         font-size: 15px;
@@ -154,13 +135,28 @@
     a {
         font-family: 'Open Sans Condensed', sans-serif;
         text-align: center;
-        padding: 4px 8px;
-        background: rgba(107, 255, 3, 0.3);
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    a:visited {
+        color: #fff;
     }
     
     a:hover {
         opacity: 0.7;
     }
+    
+    a:link {
+        color: #fff;
+    }
+    /* visited link */
+    /* mouse over link */
+    
+    a:hover {
+        color: #ccc;
+    }
+    /* selected link */
     
     #remember-container {
         position: relative;
@@ -202,16 +198,17 @@
         position: absolute;
         font-size: 13px;
         font-family: 'Hind', sans-serif;
-        color: rgba(255, 255, 255, .5);
-        left: 35px;
+        color: rgba(255, 255, 255, 0.849);
+        left: 30px;
     }
     
     #forgotten {
         position: absolute;
-        font-size: 12px;
+        font-size: 13px;
         font-family: 'Hind', sans-serif;
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.849);
         right: 0px;
+        top: 5px;
         cursor: pointer;
         -webkit-transition: all 2s ease-in-out;
         -moz-transition: all 2s ease-in-out;
@@ -240,6 +237,13 @@
     
     .orange-btn {
         background: rgba(87, 198, 255, .5);
+        position: relative;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        display: block;
+        padding-bottom: 7px;
+        padding-top: 7px;
     }
     
     .button {
@@ -264,7 +268,6 @@
         position: relative;
         z-index: 1;
         margin-bottom: 5%;
-        border-color: rgba(59, 59, 59, 0.26);
     }
     
     .button:hover:enabled {
@@ -285,6 +288,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    function onloa() {
+
+        $(".close-btn").click(function() {
+            TweenMax.from("#container", .4, {
+                scale: 1,
+                ease: Sine.easeInOut
+            });
+            TweenMax.to("#container", .4, {
+                left: "0px",
+                scale: 0,
+                ease: Sine.easeInOut
+            });
+            $("#forgotten-container").fadeOut(400, function() {
+                setTimeout(function() {
+                    document.getElementById("container").setAttribute('style', 'visibility: visible;');
+                }, 20);
+
+
+            });
+        });
+
+        /* Forgotten Password */
+        $('#forgotten').click(function() {
+            $("#container").fadeOut(function() {
+                $("#forgotten-container").fadeIn();
+            });
+        });
+    }
+</script>
 
 <body onload="onloa()">
     <!DOCTYPE html>
@@ -301,7 +334,7 @@
 
     <body>
         <div id="container">
-            <h1 style="margin-bottom: 15%;">Log In</h1>
+            <h1 style="margin-bottom: 10%;">Log In</h1>
 
             <form>
                 <input type="email" name="email" placeholder="E-mail">
@@ -314,7 +347,7 @@
                 </div>
             </form>
 
-            <label class="back">Back Menu</label>
+            <label class="back"><a href="index.html">Back Menu</a></label>
         </div>
 
 
