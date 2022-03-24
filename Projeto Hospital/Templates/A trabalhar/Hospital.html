@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<style>
+    #a:hover~#b {
+        margin-left: 1%;
+    }
+    
+    .row,
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .imgs {
+        background-color: green;
+        width: 34%;
+        height: 1%;
+        transition: width .2s ease-in;
+    }
+    
+    img:hover {
+        width: 180px;
+        height: 140px;
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: width .3s ease-out;
+    }
+    
+    div {
+        margin-left: 0px;
+    }
+</style>
+<script>
+    function move(Piso) {
+        document.getElementById('b').innerHTML = '<h3> Doctores Working in ' +
+            Piso + ': </h3>'
+    }
+</script>
+</style>
+
+<body>
+    <div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-2" style="background-color: red;float:left;height: 100%;">
+            <div class="" style="width: 400px; height: 100%;">
+                <div id="">
+                    <img class="imgs" onmouseover="move('Last Floor')" onclick="click('Upfloor')" src="img/rooms/upfloor.png">
+                </div>
+                <div id="">
+                    <img class="imgs" onmouseover="move('6ºF - Dialysis')" onclick="click('Dialysis')" id="tedste" id="teste" src="img\rooms\dialysis.png">
+                </div>
+
+                <div id="">
+                    <img class="imgs" onmouseover="move('5ºF - Neurology')" onclick="click('Neurology')" src="img\rooms\neurology.png">
+                </div>
+
+                <div id="">
+                    <img class="imgs" onmouseover="move('4ºF - Surgical')" onclick="click('Surgical')" src="img\rooms\surgical.png">
+                </div>
+                <div id="">
+                    <img class="imgs" onmouseover="move('3ºF - Pediatrics')" onclick="click('Pediatrics')" tabindex="testar" src="img\rooms\pediatrics.png">
+                </div>
+                <div id="">
+                    <img class="imgs" onmouseover="move('2ºF - Emergency')" onclick="clicks('Emergency')" src="img\rooms\emergency.png">
+                </div>
+                <div id="a">
+                    <img class="imgs" onmouseover="move('1ºF - Registration')" id="" src=" img\rooms\Registration.png " />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-10" style=" background-color: blue;float:left; height: 100%;">
+            <h3 id="b">Doctores Working in :</h3>
+            <br>
+            <div>
+                <img src=""></img>
+                <span id="remember">Remember me</span>
+            </div>
+            <div>
+                <img src=""></img>
+                <span id="remember">Remember me</span>
+            </div>
+            <div>
+                <img src=""></img><span id="remember">Remember me</span>
+            </div>
+            <div>
+                <img src=""></img><span id="remember">Remember me</span>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
