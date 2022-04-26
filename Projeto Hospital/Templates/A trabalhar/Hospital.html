@@ -24,6 +24,44 @@
         height: 97%;
     }
     
+    a {
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    a {
+        color: #33363e;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects
+    }
+    
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline
+    }
+    
+    a:not([href]):not([tabindex]) {
+        color: inherit;
+        text-decoration: none
+    }
+    
+    a:not([href]):not([tabindex]):focus,
+    a:not([href]):not([tabindex]):hover {
+        color: inherit;
+        text-decoration: none
+    }
+    
+    a:not([href]):not([tabindex]):focus {
+        outline: 0
+    }
+    
+    a:hover,
+    a:focus {
+        text-decoration: none;
+        outline: none;
+    }
+    
     #a:hover~#b {
         margin-left: 1%;
     }
@@ -69,6 +107,16 @@
         height: 55px;
         margin-top: 0px;
     }
+    
+    .circule {
+        height: 55px;
+        width: 55px;
+        background-color: rgb(255, 128, 128);
+        position: fixed;
+        border-radius: 50%;
+        bottom: 15px;
+        right: 15px;
+    }
 </style>
 <header>
     <div class="header">
@@ -103,11 +151,9 @@
         </div>
         <div style="float: right; background-color: blue  ; height: 100%; width: 33%;position: relative;">
             <div style="float:right; background-color: #ffff; width: 50%; height: 100%; position: relative;">
-                <span style="top:25%;position:absolute;float:right; right: 35%;">
-                    <a href="">Hospital</a>
-                </span> <span style="top:25%;position:absolute;float:right; right: 15%;">
+                <span style="top:25%;position:absolute;float:right; right: 25%;">
                     <a href="">Utente</a>
-                </span><span style="top:25%;position:absolute;float:right; right: 5px;">
+                </span><span style="top:25%;position:absolute;float:right; right: 25px;">
                     <a href="">Sair</a>
                 </span>
             </div>
@@ -191,6 +237,7 @@
             </div>
         </div>
     </div>
+    <div class="circule"></div>
 </body>
 
 </html>
