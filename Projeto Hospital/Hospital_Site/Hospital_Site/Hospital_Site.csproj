@@ -70,7 +70,10 @@
     <Content Include="aspx\contact.aspx" />
     <Content Include="aspx\department.aspx" />
     <Content Include="aspx\doctors.aspx" />
+    <Content Include="aspx\Hospital.aspx" />
+    <Content Include="aspx\LoginC.aspx" />
     <Content Include="aspx\LoginS.aspx" />
+    <Content Include="aspx\WebForm2.aspx" />
     <Content Include="bin\Hospital_Site.dll" />
     <Content Include="bin\Hospital_Site.pdb" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
@@ -369,6 +372,13 @@
     <Compile Include="aspx\doctors.aspx.designer.cs">
       <DependentUpon>doctors.aspx</DependentUpon>
     </Compile>
+    <Compile Include="aspx\Hospital.aspx.cs">
+      <DependentUpon>Hospital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\Hospital.aspx.designer.cs">
+      <DependentUpon>Hospital.aspx</DependentUpon>
+    </Compile>
     <Compile Include="aspx\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -383,12 +393,26 @@
     <Compile Include="aspx\contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="aspx\LoginC.aspx.cs">
+      <DependentUpon>LoginC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\LoginC.aspx.designer.cs">
+      <DependentUpon>LoginC.aspx</DependentUpon>
+    </Compile>
     <Compile Include="aspx\LoginS.aspx.cs">
       <DependentUpon>LoginS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="aspx\LoginS.aspx.designer.cs">
       <DependentUpon>LoginS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

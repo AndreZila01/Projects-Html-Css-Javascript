@@ -299,7 +299,7 @@
                 </div>
             </form>
 
-            <label class="back">Back Menu</label>
+            <label class="back"><a href="index.aspx">Back Menu</a></label>
         </div>
 
 

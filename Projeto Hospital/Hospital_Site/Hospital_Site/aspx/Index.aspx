@@ -60,8 +60,8 @@
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.aspx">Iniciar Sessão</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog.aspx">Criar Conta</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="LoginC.aspx">Iniciar Sessão</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="LoginC.aspx">Criar Conta</a></li>
                                     <li class="nav-item"><a class="nav-link" href="element.aspx">element</a></li>
                                 </ul>
                             </li>
