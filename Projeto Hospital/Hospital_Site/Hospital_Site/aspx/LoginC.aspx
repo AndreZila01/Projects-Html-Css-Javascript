@@ -291,6 +291,10 @@
 	</style>
 </head>
 <body onload="onloa()">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
 	<script>
 		function onloa() {
 			$('#login-button').click(function () {
@@ -338,18 +342,35 @@
 	</script>
 	<form id="form1" runat="server">
 		<div id="login-button">
-			<img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png"/>
+			<img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png" />
 		</div>
 		<div id="container">
 			<h1>Lock out</h1>
 			<span class="close-btn">
-				<img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"/>
+				<img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png" />
 			</span>
 
 			<form>
-				<input type="email" name="email" placeholder="E-mail"/>
-				<input type="password" name="pass" placeholder="Password"/>
-				<button class="button" href="#">Log in</button>
+				<input id="email" type="email" name="email" placeholder="E-mail" />
+				<input id="pass" type="password" name="pass" placeholder="Password" />
+				<button class="button" onclick="myfunction()">Log in</button>
+				<script>
+					function myfunction() {
+						jQuery.ajax({
+							method: "POST",
+							url: "LoginC.aspx/checkUser",
+							contentType: "application/json; charset=utf-8",
+							dataType: "json",
+							data: JSON.stringify({ username: 'testar', password: 'testas' }),
+							error: function (XMLHttpRequest, textStatus, errorThrown) {
+								console.log("Error", errorThrown);
+							},
+							success: function (result) {
+								console.log("success", result);
+							}
+						});
+					}
+				</script>
 				<div id="remember-container">
 					<input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked" />
 					<span id="remember">Remember me</span>
@@ -367,15 +388,14 @@
 			</span>
 
 			<form>
-				<input type="email" name="email" placeholder="E-mail"/>
+				<input type="email" name="email" placeholder="E-mail" />
 				<a href="#" class="orange-btn">Get new password</a>
-				<input type="code" name="code" style="cursor: not-allowed;" placeholder="Code" disabled />
-				<input type="password" name="password" style="cursor: not-allowed;" placeholder="New Password" disabled />
+				<input id="name" type="code" name="code" style="cursor: not-allowed;" placeholder="Code" disabled />
+				<input id="password" type="password" name="password" style="cursor: not-allowed;" placeholder="New Password" disabled />
 				<button class="button" style="cursor: not-allowed;" href="#" disabled>Password Alterada</button>
 			</form>
 		</div>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		
 	</form>
 </body>
 </html>

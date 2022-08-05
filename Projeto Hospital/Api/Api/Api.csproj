@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Funcionario\**" />
+    <Compile Remove="Login\**" />
+    <Content Remove="Funcionario\**" />
+    <Content Remove="Login\**" />
+    <EmbeddedResource Remove="Funcionario\**" />
+    <EmbeddedResource Remove="Login\**" />
+    <None Remove="Funcionario\**" />
+    <None Remove="Login\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.0-preview.2.21154.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0-preview.2.21154.6" />
@@ -12,8 +23,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Funcionario\" />
-    <Folder Include="Login\" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 
