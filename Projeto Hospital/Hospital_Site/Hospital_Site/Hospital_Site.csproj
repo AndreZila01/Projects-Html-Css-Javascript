@@ -209,6 +209,7 @@
     <Content Include="img\banner\about1.png" />
     <Content Include="img\banner\about2.png" />
     <Content Include="img\banner\banner-2.jpg" />
+    <Content Include="img\banner\banner-2.png" />
     <Content Include="img\banner\banner.jpg" />
     <Content Include="img\banner\home-banner.jpg" />
     <Content Include="img\banner\pattern_bg.jpg" />

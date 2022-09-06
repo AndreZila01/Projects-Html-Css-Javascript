@@ -102,7 +102,6 @@ C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\bin\roslyn\vbc.rsp
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\bin\roslyn\VBCSCompiler.exe
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\obj\Debug\Hospital_Site.csproj.AssemblyReference.cache
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\obj\Debug\Hospital_Site.csproj.CoreCompileInputs.cache
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\obj\Debug\Hospital_Site.csproj.CopyComplete
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\obj\Debug\Hospital_Site.dll
