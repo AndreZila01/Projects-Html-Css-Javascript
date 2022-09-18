@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="../img/favicon.png" type="image/png">
-	<link rel="imgBack" href="../img/banner/banner-2.jpg" type="image/jpg">
+	<link rel="imgBack" href="../img/background/banner-2.jpg" type="image/jpg">
 	<title>Medcare Medical</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../css/bootstrap.css">
@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="../vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../scss/_breadcrumb.scss">
 	<!-- main css -->
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/responsive.css">
@@ -227,7 +228,7 @@
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="card card-team">
-						<img class="card-img rounded-0" src="../img/team/1.jpg" alt="">
+						<img class="card-img rounded-0" src="../img/team/D1.jpg" alt="">
 						<div class="card-team__body text-center">
 							<h3><a href="#">Dr Adam Brain</a></h3>
 							<p>Cardiologist</p>
@@ -246,7 +247,7 @@
 
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="card card-team">
-						<img class="card-img rounded-0" src="../img/team/2.jpg" alt="">
+						<img class="card-img rounded-0" src="../img/team/D2.jpg" alt="">
 						<div class="card-team__body text-center">
 							<h3><a href="#">Dr Blian Judge</a></h3>
 							<p>Cardiologist</p>
@@ -265,7 +266,7 @@
 
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="card card-team">
-						<img class="card-img rounded-0" src="../img/team/3.jpg" alt="">
+						<img class="card-img rounded-0" src="../img/team/D3.jpg" alt="">
 						<div class="card-team__body text-center">
 							<h3><a href="#">Dr Blian Judge</a></h3>
 							<p>Cardiologist</p>

@@ -26,8 +26,18 @@
         </div>
     </div>
 </header>
+<script>
+    function cliks(){
+        var my_elem = document.getElementById('teste');
 
+var span = document.createElement('span');
+    span.innerHTML = '*';
+    span.className = 'asterisk';
+
+my_elem.lastChild.after(span);}
+</script>
 <body>
+    
     <div class="divsearch">
         <label class="labels">Name Pokemon</label>
         <input></input>
@@ -43,7 +53,7 @@
                     <i>フシギダネ</i>
                 </div>
             </div>
-            <div class="arrow">▼</div>
+            <div class="arrow"  onclick="document.getElementById('id01').style.display='block'">▼</div>
         </div>
         <div class="pokemon">
             <img src="https://projectpokemon.org/images/normal-sprite/bulbasaur.gif"

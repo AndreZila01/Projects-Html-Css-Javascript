@@ -206,15 +206,6 @@
     <Content Include="img\background\Hospital.png" />
     <Content Include="img\background\output-onlinepngtools.png" />
     <Content Include="img\background\UsersLogin.png" />
-    <Content Include="img\banner\about1.png" />
-    <Content Include="img\banner\about2.png" />
-    <Content Include="img\banner\banner-2.jpg" />
-    <Content Include="img\banner\banner-2.png" />
-    <Content Include="img\banner\banner.jpg" />
-    <Content Include="img\banner\home-banner.jpg" />
-    <Content Include="img\banner\pattern_bg.jpg" />
-    <Content Include="img\banner\shap-1.png" />
-    <Content Include="img\banner\shap-2.png" />
     <Content Include="img\blog\1.jpg" />
     <Content Include="img\blog\2.jpg" />
     <Content Include="img\blog\3.jpg" />

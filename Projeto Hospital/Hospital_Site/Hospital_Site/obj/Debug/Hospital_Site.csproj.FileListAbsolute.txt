@@ -128,3 +128,4 @@ C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\bin\System.ValueTuple.xml
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\obj\Debug\Hospital_Site.Properties.Resources.resources
 C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\obj\Debug\Hospital_Site.csproj.GenerateResource.cache
+C:\Users\andre\Documents\GitHub\Projects-Html-Css\Projeto Hospital\Hospital_Site\Hospital_Site\obj\Debug\Hospital_Site.csproj.AssemblyReference.cache
