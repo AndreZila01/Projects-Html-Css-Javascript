@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body,
+    html {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+    button {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+    }
+</style>
+
+<body id="body">
+    <div style="columns:auto">
+        <label id="label" style="font-size: larger;">Hex: #fff</label>
+<br>
+        <button onclick="myFunction()" id="Color">Click me</button>
+    </div>
+    <script>
+        function myFunction() {
+            var r = (Math.floor(Math.random() * 255) + 0);
+            var g = (Math.floor(Math.random() * 255) + 0);
+            var b = (Math.floor(Math.random() * 255) + 0);
+            document.getElementById("body").setAttribute('style', "background-color: rgb(" + r + "," + g + "," + b + ")");
+
+            document.getElementById("label").innerHTML = "Hex: "+rgbToHex(r, g, b);
+        }
+        function componentToHex(c) {
+            let hex = c.toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
+        }
+        function rgbToHex(r, g, b) {
+            return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        }
+    </script>
+
+</body>
+
+</html>
