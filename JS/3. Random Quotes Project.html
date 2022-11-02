@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            height: 350px;
+            margin-top: 5%;
+            margin-right: 35%;
+            margin-left: 35%;
+            position: relative;
+            border: 3px solid green;
+        }
+
+        .center {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin-bottom: 15%;
+        }
+
+        button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            width: 200px;
+            height: 40px;
+            padding: 10px 5px;
+            font-size: 16px;
+            cursor: pointer;
+            left: 50%;
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+            text-align: center;
+        }
+
+        .row>* {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-top: var(--bs-gutter-y)
+        }
+
+        body{
+            background-color: #b09e99;
+        }
+    </style>
+</head>
+
+<body onload="onload()">
+
+    <div class="container">
+        <div class="center">
+            <button onclick="Click()">Centered Button</button>
+        </div>
+        <div class="center" style="margin-top:20%;margin-left:-5%">
+            <div class="" style="float: left;margin-top: 45px;">
+                <svg style="width: 5%;" aria-hidden="true" data-prefix="fas" data-icon="quote-left" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                    </path>
+                </svg>
+                <label style="font-size: 15px;" id="texto">dsds</label>
+            </div>
+            <div style="float:right">
+                <label style="font-size: 15px;" id="Autor">dsds</label>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    var texto = [{ texto: "Era uma vez a vida", autor: "Pedro" }, { texto: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ipsum aspernatur blanditiis maiores.", autor: "Autor" }, { texto: "2019 throwback songs to play on a late night drive 🚗", autor: "youtube" }, { texto: "COVID-19: Mais 21 mortos e 13.747 infetados. Internamentos e incidência baixam, R(t) sobe", autor: "sapo" }, { texto: "Zelensky alvo de três tentativas de assassinato", autor: "Jornal de Noticias" }, { texto: "NATO teme que 'dias vindouros sejam piores' e que Rússia avance para outros países", autor: "Sic Noticias" }, { texto: "Kirby aplica o seu Mouthful Mode até à própria Nintendo Switch", autor: "EuroGamer" }, { texto: "GameFreak Under Time Crunch After Not Releasing a New Pokémon Game for One Whole Month", autor: "Hard Drive" }, { texto: "Electronic Arts e Microsoft cancelam vendas de produtos na Rússia", autor: "Sapo" }];
+    function onload() {
+        document.getElementById("texto").innerHTML=texto[0].texto;
+        document.getElementById("Autor").innerHTML=texto[0].autor;
+    }
+    function Click(){
+        var ds = (Math.floor(Math.random() * 7) + 0);
+        document.getElementById("texto").innerHTML=texto[ds].texto;
+        document.getElementById("Autor").innerHTML=texto[ds].autor;
+    }
+</script>
+
+</html>
