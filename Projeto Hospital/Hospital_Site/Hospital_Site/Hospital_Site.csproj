@@ -473,6 +473,7 @@
     <Compile Include="aspx\Utente.aspx.designer.cs">
       <DependentUpon>Utente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Class\Brain.cs" />
     <Compile Include="Class\Data.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

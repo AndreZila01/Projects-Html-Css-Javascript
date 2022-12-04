@@ -84,40 +84,27 @@
     }
     /* Inputs */
     
-    a {
-        font-family: 'Open Sans Condensed', sans-serif;
-        text-decoration: none;
-        position: relative;
-        width: 80%;
-        display: block;
-        margin: 9px auto;
-        font-size: 17px;
-        color: #fff;
-        padding: 8px;
-        border-radius: 6px;
-        border: none;
-        background: rgba(3, 3, 3, .1);
-        -webkit-transition: all 2s ease-in-out;
-        -moz-transition: all 2s ease-in-out;
-        -o-transition: all 2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-    }
+   a {
+			font-family: 'Open Sans Condensed', sans-serif;
+			text-align: center;
+			text-decoration: none;
+			font-size: 18px;
+		}
     
     input {
-        font-family: Montserrat-Bold;
-        font-size: 15px;
-        line-height: 1.2;
-        color: #333333;
-        display: block;
-        width: 75%;
-        background: rgba(3, 3, 3, .18);
-        height: 50px;
-        margin-left: 3%;
-        margin-bottom: 15px;
-        border-color: #ededed;
-        border: 1px;
-        border-radius: 25px;
-        padding: 0 30px 0 53px;
+           font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333333;
+    display: block;
+    width: 75%;
+    background: rgba(3, 3, 3, .18);
+    height: 50px;
+    margin-left: 3%;
+    margin-bottom: 15px;
+    border-color: #ededed;
+    border-radius: 25px;
+    padding: 0 30px 0 53px;
     }
     
     input:focus {
@@ -146,16 +133,24 @@
     }
     /* Link */
     
-    a {
-        font-family: 'Open Sans Condensed', sans-serif;
-        text-align: center;
-        padding: 4px 8px;
-        background: rgba(107, 255, 3, 0.3);
-    }
-    
-    a:hover {
-        opacity: 0.7;
-    }
+
+			a:visited {
+				color: #fff;
+			}
+
+			a:hover {
+				opacity: 0.7;
+			}
+
+			a:link {
+				color: #fff;
+			}
+			/* visited link */
+			/* mouse over link */
+
+			a:hover {
+				color: #ccc;
+			}
     
     #remember-container {
         position: relative;
@@ -192,26 +187,36 @@
         left: 4px;
         color: #fff;
     }
-    
+    .orange-btn {
+			background: rgba(55, 54, 58, 0.308);
+			position: relative;
+			margin-left: 15%;
+			margin-right: 15%;
+			margin-bottom: 5%;
+			display: block;
+			padding-bottom: 7px;
+			padding-top: 7px;
+		}
     #remember {
         position: absolute;
-        font-size: 13px;
-        font-family: 'Hind', sans-serif;
-        color: rgba(255, 255, 255, .5);
-        left: 35px;
+    font-size: 13px;
+    font-family: 'Hind', sans-serif;
+    color: rgba(255, 255, 255, 0.849);
+    left: 30px;
     }
     
     #forgotten {
-        position: absolute;
-        font-size: 12px;
-        font-family: 'Hind', sans-serif;
-        color: rgba(255, 255, 255, .5);
-        right: 0px;
-        cursor: pointer;
-        -webkit-transition: all 2s ease-in-out;
-        -moz-transition: all 2s ease-in-out;
-        -o-transition: all 2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+            position: absolute;
+    font-size: 13px;
+    font-family: 'Hind', sans-serif;
+    color: rgba(255, 255, 255, 0.849);
+    right: 0px;
+    top: 5px;
+    cursor: pointer;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     }
     
     #forgotten:hover {
@@ -232,34 +237,29 @@
         box-shadow: 1px 1px 50px #000;
         display: none;
     }
-    
-    .orange-btn {
-        background: rgba(87, 198, 255, .5);
-    }
-    
+        
     .button {
         font-family: Montserrat-Bold;
-        font-size: 15px;
-        line-height: 1.5;
-        color: black;
-        width: 80%;
-        height: 50px;
-        left: 10%;
-        border-radius: 25px;
-        background: rgba(59, 59, 59, 0.26);
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 25px;
-        transition: all 0.4s;
-        position: relative;
-        z-index: 1;
-        margin-bottom: 5%;
-        border-color: rgba(59, 59, 59, 0.26);
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    width: 80%;
+    height: 50px;
+    left: 10%;
+    border-radius: 25px;
+    background: rgba(59, 59, 59, 0.26);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5%;
     }
     
     .button:hover:enabled {
@@ -267,11 +267,11 @@
     }
     
     .back {
-        position: absolute;
-        right: 2%;
-        margin-top: 22%;
-        cursor: pointer;
-    }
+			position: absolute;
+			right: 2%;
+			margin-top: 22%;
+			cursor: pointer;
+		}
 </style>
 
 <head>
@@ -284,23 +284,72 @@
 </head>
 
     
-<body onload="onloa()">
+<body onload="onloa()"><script>
+		function onloa() {
+			
+			/* Forgotten Password */
+			$('#forgotten').click(function () {
+				$("#container").fadeOut(function () {
+					$("#forgotten-container").fadeIn();
+				});
+            });
+			$(".close-btn").click(function () {
+				TweenMax.from("#container", .4, {
+					scale: 1,
+					ease: Sine.easeInOut
+				});
+				TweenMax.to("#container", .4, {
+					left: "0px",
+					scale: 0,
+					ease: Sine.easeInOut
+				});
+				$("#container, #forgotten-container").fadeOut(800, function () {
+					$("#container").fadeIn(800);
+					setTimeout(function () {
+						document.getElementById("container").setAttribute('style', 'visibility: visible;');
+					}, 200);
+
+
+				});
+			});
+		}
+</script>
         <div id="container">
-            <h1 style="margin-bottom: 15%;">Log In</h1>
+			<h1>Lock In</h1>
+			<span class="close-btn">
+				<img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png" />
+			</span>
 
-            <form>
-                <input type="email" name="email" placeholder="E-mail">
-                <input type="password" name="pass" placeholder="Password">
-                <button class="button" href="#">Log in</button>
-                <div id="remember-container">
-                    <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked" />
-                    <span id="remember">Remember me</span>
-                    <span id="forgotten">Forgotten password</span>
-                </div>
-            </form>
+			<form>
+				<input id="email" type="email" name="email" placeholder="E-mail" />
+				<input id="pass" type="password" name="pass" placeholder="Password" />
+				<button class="button" onclick="myfunction()">Log in</button>
+				<script>
+					function myfunction() {
+						jQuery.ajax({
+							method: "POST",
+							url: "LoginC.aspx/checkUser",
+							contentType: "application/json; charset=utf-8",
+							dataType: "json",
+							data: JSON.stringify({ username: 'testar', password: 'testas' }),
+							error: function (XMLHttpRequest, textStatus, errorThrown) {
+								console.log("Error", errorThrown);
+							},
+							success: function (result) {
+								console.log("success", result);
+							}
+						});
+					}
+				</script>
+				<div id="remember-container">
+					<input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked" />
+					<span id="remember">Remember me</span>
+					<span id="forgotten">Forgotten password</span>
+				</div>
+			</form>
 
-            <label class="back"><a href="index.aspx">Back Menu</a></label>
-        </div>
+			<label class="back"><a href="index.aspx">Back Menu</a></label>
+		</div>
 
 
         <div id="forgotten-container">
@@ -310,12 +359,12 @@
             </span>
 
             <form>
-                <input type="email" name="email" placeholder="E-mail">
-                <a href="#" class="orange-btn">Get new password</a>
-                <input name="code" style="cursor: not-allowed;" placeholder="Code" disabled>
-                <input type="password" name="password" style="cursor: not-allowed;" placeholder="New Password" disabled>
-                <button class="button" style="cursor: not-allowed;" href="#" disabled>Password Alterada</button>
-            </form>
+				<input type="email" name="email" placeholder="E-mail" />
+				<a href="#" class="orange-btn">Get new password</a>
+				<input id="name" type="code" name="code" style="cursor: not-allowed;" placeholder="Code" disabled />
+				<input id="password" type="password" name="password" style="cursor: not-allowed;" placeholder="New Password" disabled />
+				<button class="button" style="cursor: not-allowed;" href="#" disabled>Password Alterada</button>
+			</form>
         </div>
 
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>

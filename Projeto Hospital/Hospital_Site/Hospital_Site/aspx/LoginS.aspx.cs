@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hospital_Site.Class;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,11 @@ namespace Hospital_Site.aspx
 		protected void Page_Load(object sender, EventArgs e)
 		{
 
+		}
+		protected void getcode_Click(object sender, EventArgs e)
+		{
+			var brain = new Brain();
+			brain.sendemail("", "");
 		}
 	}
 }
