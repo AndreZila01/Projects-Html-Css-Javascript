@@ -2,8 +2,8 @@
 <html lang="pt">
 
 <head>
-
-    <link rel="stylesheet" href="/css/css.css">
+    <link rel="stylesheet" href="/css/css.css"> 
+    <script src="/js/js.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,18 +26,22 @@
         </div>
     </div>
 </header>
-<script>
-    function cliks(){
-        var my_elem = document.getElementById('teste');
+<div id="id01" class="modal">
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+                <img src="https://projectpokemon.org/images/normal-sprite/bulbasaur.gif"
+                style="width: 100px;height: 100px;"></img>
+        </div>
+        <div> Bulbasaur - nº 0001</div>
 
-var span = document.createElement('span');
-    span.innerHTML = '*';
-    span.className = 'asterisk';
+        <div class="container">
+            
+        </div>
+    </form>
+</div>
 
-my_elem.lastChild.after(span);}
-</script>
 <body>
-    
+    <div style="display: none;">dssd</div>
     <div class="divsearch">
         <label class="labels">Name Pokemon</label>
         <input></input>
@@ -53,7 +57,9 @@ my_elem.lastChild.after(span);}
                     <i>フシギダネ</i>
                 </div>
             </div>
-            <div class="arrow"  onclick="document.getElementById('id01').style.display='block'">▼</div>
+            <!--https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-45.php
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal-->
+            <div onclick="document.getElementById('id01').style.display='block'" , class="arrow" , style="display:block">▼</div>
         </div>
         <div class="pokemon">
             <img src="https://projectpokemon.org/images/normal-sprite/bulbasaur.gif"
@@ -146,5 +152,15 @@ my_elem.lastChild.after(span);}
             <div></div>
         </div>
 </body>
+<script>
+    var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </html>
