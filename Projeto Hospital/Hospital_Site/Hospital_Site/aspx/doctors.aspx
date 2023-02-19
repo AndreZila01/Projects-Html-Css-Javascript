@@ -85,7 +85,7 @@
                     </div>
                     <div class="page_link">
                         <a href="index.aspx">Home</a>
-                        <a href="contact.aspx">Doctors</a>
+                        <a href="doctors.aspx">Doctors</a>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card card-team">
-                        <img class="card-img rounded-0" src="../img/team/1.jpg" alt="">
+                        <img class="card-img rounded-0" src="../img/team/D1.jpg" alt="">
                         <div class="card-team__body text-center">
                             <h3><a href="#">Dr Adam Brain</a></h3>
                             <p>Cardiologist</p>
@@ -129,7 +129,7 @@
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card card-team">
-                        <img class="card-img rounded-0" src="../img/team/2.jpg" alt="">
+                        <img class="card-img rounded-0" src="../img/team/D2.jpg" alt="">
                         <div class="card-team__body text-center">
                             <h3><a href="#">Dr Blian Judge</a></h3>
                             <p>Cardiologist</p>
@@ -148,7 +148,7 @@
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card card-team">
-                        <img class="card-img rounded-0" src="../img/team/3.jpg" alt="">
+                        <img class="card-img rounded-0" src="../img/team/D3.jpg" alt="">
                         <div class="card-team__body text-center">
                             <h3><a href="#">Dr Blian Judge</a></h3>
                             <p>Cardiologist</p>

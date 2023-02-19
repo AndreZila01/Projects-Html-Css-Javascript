@@ -87,19 +87,6 @@
                     <div class="page_link">
                         <a href="index.aspx">Home</a>
                         <a href="contact.aspx">Contact</a>
-                        <div>
-                            <div>
-                                <div class="float-center">
-                                    <ul class="list header_social">
-                                        <li class="spaceli"><a href="#"><i class="ti-facebook"></i></a></li>
-                                        <li class="spaceli"><a target="_blank" href="https://twitter.com/ANDREcust123"><i class="ti-twitter-alt"></i></a></li>
-                                        <li class="spaceli"><a target="_blank" href="https://www.linkedin.com/in/andr%C3%A9-cust%C3%B3dio-08522b181/"><i class="ti-linkedin"></i></a></li>
-                                        <li class="spaceli"><a href="#"><i class="ti-skype"></i></a></li>
-                                        <li class="spaceli"><a href="#"><i class="ti-vimeo-alt"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -42,7 +42,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.aspx"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.aspx"><img src="../img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -72,7 +72,7 @@
         </div>
     </header>
     <!--================Header Menu Area =================-->
-
+    <br><br>
     <!--================Home Banner Area =================-->
     <section class="banner_area">
         <div class="banner_inner d-flex align-items-center">
@@ -84,7 +84,7 @@
                     </div>
                     <div class="page_link">
                         <a href="index.aspx">Home</a>
-                        <a href="contact.aspx">About Us</a>
+                        <a href="about-us.aspx">About Us</a>
                     </div>
                 </div>
             </div>

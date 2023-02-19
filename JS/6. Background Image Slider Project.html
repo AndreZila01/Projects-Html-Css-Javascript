@@ -1,0 +1,64 @@
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://js-beginners.github.io/background-image-slider-project/css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="https://js-beginners.github.io/background-image-slider-project/css/main.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://js-beginners.github.io/background-image-slider-project/css/all.css">
+    <title>Background Image Project</title>
+    <style>
+    </style>
+</head>
+
+<body onload="load()">
+
+
+    <div class="container">
+        <div class="row max-height align-items-center">
+            <div class="col-9 col-md-10 mx-auto img-container">
+                <a class="btn btn-left"><i class="fas fa-caret-left"></i></a>
+                <a class="btn btn-right"><i class="fas fa-caret-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let btns = document.querySelectorAll('a');
+
+        for (i of btns) {
+            (function (i) {
+                i.addEventListener('click', function () {
+                    if (i.innerHTML.includes('right'))
+                        document.getElementsByClassName('img-container')[0].style.backgroundImage = 'url("https://js-beginners.github.io/background-image-slider-project/img/contBcg-' + (parseInt(document.getElementsByClassName('align-items-center')[0].innerHTML.split('.jpeg&quot;')[0].split('contBcg-')[1]) + 1) + '.jpeg")';
+                    if (i.innerHTML.includes('left'))
+                        document.getElementsByClassName('img-container')[0].style.backgroundImage = 'url("https://js-beginners.github.io/background-image-slider-project/img/contBcg-' + (parseInt(document.getElementsByClassName('align-items-center')[0].innerHTML.split('.jpeg&quot;')[0].split('contBcg-')[1]) - 1) + '.jpeg")';
+
+                    if (parseInt(document.getElementsByClassName('align-items-center')[0].innerHTML.split('.jpeg&quot;')[0].split('contBcg-')[1]) == 5)
+                        document.getElementsByClassName('img-container')[0].style.backgroundImage = 'url("https://js-beginners.github.io/background-image-slider-project/img/contBcg-0.jpeg")';
+                    else if (parseInt(document.getElementsByClassName('align-items-center')[0].innerHTML.split('.jpeg&quot;')[0].split('contBcg-')[1]) == 0) document.getElementsByClassName('img-container')[0].style.backgroundImage = 'url("https://js-beginners.github.io/background-image-slider-project/img/contBcg-4.jpeg")';
+                });
+            })(i);
+
+        }
+
+    </script>
+    <script>
+        function load() {
+            document.getElementsByClassName('img-container')[0].style.backgroundImage = 'url("https://js-beginners.github.io/background-image-slider-project/img/contBcg-0.jpeg")';
+        }
+    </script>
+
+
+
+</body>
+
+</html>
