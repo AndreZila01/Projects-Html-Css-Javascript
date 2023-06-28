@@ -52,21 +52,21 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.aspx">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about-us.aspx">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="department.aspx">Department</a></li>
-                            <li class="nav-item"><a class="nav-link" href="doctors.aspx">Doctors</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.aspx">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about-us.aspx">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="department.aspx">Department</a></li>
+							<li class="nav-item"><a class="nav-link" href="doctors.aspx">Doctors</a></li>
 
-                            <li class="nav-item"><a class="nav-link" href="contact.aspx">Contact</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.aspx">Iniciar Sessão</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog.aspx">Criar Conta</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="element.aspx">element</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+							<li class="nav-item"><a class="nav-link" href="contact.aspx">Contact</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="LoginC.aspx">Iniciar Sessão</a></li>
+									<li class="nav-item"><a class="nav-link" href="LoginC.aspx">Criar Conta</a></li>
+									<li class="nav-item"><a class="nav-link" href="element.aspx">element</a></li>
+								</ul>
+							</li>
+						</ul>
                     </div>
                 </div>
             </nav>
