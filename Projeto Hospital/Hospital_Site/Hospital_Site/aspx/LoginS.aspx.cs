@@ -19,7 +19,7 @@ namespace Hospital_Site.aspx
 
 		}
         [WebMethod]
-        public async static Task<string> checkUser(string username, string password)
+        public async static Task<string> checkUsers(string username, string password)
         {
             var client = new RestClient($"https://localhost:44391/api/login");
             var request = new RestRequest();
@@ -30,56 +30,21 @@ namespace Hospital_Site.aspx
             request.RequestFormat = DataFormat.Json;
             var response = await client.ExecuteGetAsync(request);
             Console.WriteLine("" + response);
+            new Brain().sendemail("", "");
 
             return response.Content;
         }
+
+        [WebMethod]
+        public async static Task<string> newcode(string email)
+        {
+            new Brain().sendemail("", email);
+
+            return "";
+        }
         protected void getcode_Click(object sender, EventArgs e)
 		{
-			var brain = new Brain();
-			brain.sendemail("", "");
-
-            try
-            {
-
-                SmtpClient mySmtpClient = new SmtpClient("my.smtp.exampleserver.net");
-
-                // set smtp-client with basicAuthentication
-                mySmtpClient.UseDefaultCredentials = false;
-                System.Net.NetworkCredential basicAuthenticationInfo = new
-                   System.Net.NetworkCredential("username", "password");
-                mySmtpClient.Credentials = basicAuthenticationInfo;
-
-                // add from,to mailaddresses
-                MailAddress from = new MailAddress("test@example.com", "TestFromName");
-                MailAddress to = new MailAddress("test2@example.com", "TestToName");
-                MailMessage myMail = new System.Net.Mail.MailMessage(from, to);
-
-                // add ReplyTo
-                MailAddress replyTo = new MailAddress("reply@example.com");
-                myMail.ReplyToList.Add(replyTo);
-
-                // set subject and encoding
-                myMail.Subject = "Test message";
-                myMail.SubjectEncoding = System.Text.Encoding.UTF8;
-
-                // set body-message and encoding
-                myMail.Body = "<b>Test Mail</b><br>using <b>HTML</b>.";
-                myMail.BodyEncoding = System.Text.Encoding.UTF8;
-                // text or html
-                myMail.IsBodyHtml = true;
-
-                mySmtpClient.Send(myMail);
-            }
-
-            catch (SmtpException ex)
-            {
-                throw new ApplicationException
-                  ("SmtpException has occured: " + ex.Message);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            new Brain().sendemail("", "");
         }
 	}
 }

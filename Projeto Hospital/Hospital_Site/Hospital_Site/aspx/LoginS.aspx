@@ -323,12 +323,12 @@
 			<form>
 				<input id="email" type="email" name="email" placeholder="E-mail" />
 				<input id="pass" type="password" name="pass" placeholder="Password" />
-				<button class="button" onclick="myfunction()">Log in</button>
+				<button class="button" onclick="login()">Log in</button>
 				<script>
-					function myfunction() {
+					function login() {
 						jQuery.ajax({
 							method: "POST",
-							url: "LoginC.aspx/checkUser",
+							url: "LoginS.aspx/checkUsers",
 							contentType: "application/json; charset=utf-8",
 							dataType: "json",
 							data: JSON.stringify({ username: 'testar', password: 'testas' }),
@@ -360,7 +360,25 @@
 
             <form>
 				<input type="email" name="email" placeholder="E-mail" />
-				<a href="#" class="orange-btn">Get new password</a>
+				<a href="#" class="orange-btn" onclick="newcode()">Get new password</a>
+                <script>
+                    function newcode() {
+                        jQuery.ajax({
+                            method: "POST",
+                            url: "LoginS.aspx/newcode",
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            data: JSON.stringify({
+                                email: document.getElementsByName('email')[1].value }),
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                console.log("Error", errorThrown);
+                            },
+                            success: function (result) {
+                                console.log("success", result);
+                            }
+                        });
+                    }
+                </script>
 				<input id="name" type="code" name="code" style="cursor: not-allowed;" placeholder="Code" disabled />
 				<input id="password" type="password" name="password" style="cursor: not-allowed;" placeholder="New Password" disabled />
 				<button class="button" style="cursor: not-allowed;" href="#" disabled>Password Alterada</button>

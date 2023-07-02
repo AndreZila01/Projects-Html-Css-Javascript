@@ -21,7 +21,7 @@ namespace Hospital_Site.aspx
 		[WebMethod]
 		public async static Task<string> checkUser(string username, string password)
 		{
-			var client = new RestClient($"https://localhost:44391/api/login");
+			var client = new RestClient($"https://localhost:44391/api/");
 			var request = new RestRequest();
 			request.Method = Method.Get;
 			//([FromHeader] string username, [FromHeader] string pass)
@@ -31,7 +31,12 @@ namespace Hospital_Site.aspx
 			var response = await client.ExecuteGetAsync(request);
 			Console.WriteLine(""+ response);
 
-			return response.Content;
+            return response.Content;
 		}
-	}
+        protected void getcode_Click(object sender, EventArgs e)
+        {
+            new Brain().sendemail("", "");
+            new Brain().sendemail("", "");
+        }
+    }
 }

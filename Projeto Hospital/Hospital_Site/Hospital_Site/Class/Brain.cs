@@ -1,53 +1,32 @@
-﻿using System;
+﻿using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
+using MimeKit.Text;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Mail;
 using System.Web;
 
 namespace Hospital_Site.Class
 {
 	public class Brain
 	{
-		public void sendemail(string message, string email)
+		public void sendemail(string message, string emails)
 		{
 			try
 			{
+                var email = new MimeMessage();
+                email.From.Add(MailboxAddress.Parse("maggie.schumm@ethereal.email"));
+                email.To.Add(MailboxAddress.Parse(emails));
+                email.Subject = "Test Subject";
+                email.Body = new TextPart(TextFormat.Html) { Text = "Hey World!!" };
 
-				SmtpClient mySmtpClient = new SmtpClient("my.smtp.exampleserver.net");
-
-				// set smtp-client with basicAuthentication
-				mySmtpClient.UseDefaultCredentials = false;
-				System.Net.NetworkCredential basicAuthenticationInfo = new
-				   System.Net.NetworkCredential("username", "password");
-				mySmtpClient.Credentials = basicAuthenticationInfo;
-
-				// add from,to mailaddresses
-				MailAddress from = new MailAddress("test@example.com", "TestFromName");
-				MailAddress to = new MailAddress("andrecustodiotablet@gmail.com", "TestToName");
-				MailMessage myMail = new System.Net.Mail.MailMessage(from, to);
-
-				// add ReplyTo
-				MailAddress replyTo = new MailAddress("reply@example.com");
-				myMail.ReplyToList.Add(replyTo);
-
-				// set subject and encoding
-				myMail.Subject = "Test message";
-				myMail.SubjectEncoding = System.Text.Encoding.UTF8;
-
-				// set body-message and encoding
-				myMail.Body = "<b>Test Mail</b><br>using <b>HTML</b>.";
-				myMail.BodyEncoding = System.Text.Encoding.UTF8;
-				// text or html
-				myMail.IsBodyHtml = true;
-
-				mySmtpClient.Send(myMail);
-			}
-
-			catch (SmtpException ex)
-			{
-				throw new ApplicationException
-				  ("SmtpException has occured: " + ex.Message);
-			}
+                var smtp = new SmtpClient();
+                smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);//https://github.com/JiboGithub/EmailSender
+                smtp.Authenticate("maggie.schumm@ethereal.email", "A8SRTpjYhjSX26rJdT");
+                smtp.Send(email);
+                smtp.Disconnect(true);
+            }
 			catch (Exception ex)
 			{
 				throw ex;

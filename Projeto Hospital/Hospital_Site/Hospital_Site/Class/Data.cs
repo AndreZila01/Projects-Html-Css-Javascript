@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace Hospital_Site.Class
@@ -44,7 +45,7 @@ namespace Hospital_Site.Class
                                 cipherTextBytes = cipherTextBytes.Concat(memoryStream.ToArray()).ToArray();
                                 memoryStream.Close();
                                 cryptoStream.Close();
-                                return Convert.ToBase64String(cipherTextBytes);
+                                return ROT13(Convert.ToBase64String(cipherTextBytes));
                             }
                         }
                     }
@@ -88,6 +89,23 @@ namespace Hospital_Site.Class
                     }
                 }
             }
+        }
+
+        public static string ROT13(string input)
+        {
+            StringBuilder result = new StringBuilder();
+            Regex regex = new Regex("[A-Za-z]");
+            foreach (char c in input)
+            {
+                if (regex.IsMatch(c.ToString()))
+                {
+                    int code = ((c & 223) - 52) % 26 + (c & 32) + 65;
+                    result.Append((char)code);
+                }
+                else
+                    result.Append(c);
+            }
+            return result.ToString();
         }
 
         private static byte[] Generate256BitsOfRandomEntropy()
